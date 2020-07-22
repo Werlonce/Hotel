@@ -4,7 +4,6 @@
 
 body {
   font-family: 'Muli', sans-serif;
-  font-family: 'Nunito', sans-serif;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -813,7 +812,6 @@ template {
 }
 
 .reviews__title {
-  font-family: Muli;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
