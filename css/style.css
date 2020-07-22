@@ -756,14 +756,16 @@ template {
 }
 
 .newsletter-title {
-  color: #fff;
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  color: #fff;
 }
 
 .newsletter-title__strong {
   display: block;
+  font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
@@ -800,6 +802,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
@@ -807,6 +813,7 @@ template {
 }
 
 .reviews__title {
+  font-family: Muli;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -923,6 +930,10 @@ template {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+}
+
+.subscribe__input::placeholder {
+  color: #BDBDBD;
 }
 
 @media (max-width: 1200px) {
