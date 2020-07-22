@@ -805,7 +805,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel__slide {
     width: 590px;
   }
   .swiper-slide__image {
