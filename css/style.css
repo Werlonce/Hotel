@@ -1645,6 +1645,6 @@ template {
     align-items: start;
   }
   .footer-list {
-    min-width: 100%;
+    min-width: 325px;
   }
 }
