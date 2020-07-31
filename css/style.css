@@ -1603,6 +1603,7 @@ template {
   }
   .modal__dialog--visible {
     width: 85%;
+    padding: 33px 30px;
   }
   .modal__info {
     flex-basis: 100%;
