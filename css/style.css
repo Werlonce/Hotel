@@ -1601,6 +1601,16 @@ template {
   .hotel-slider {
     height: 350px;
   }
+  .modal__dialog--visible {
+    width: 85%;
+  }
+  .modal__info {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    order: 2;
+  }
   .booking {
     width: 100%;
   }
