@@ -179,7 +179,7 @@
                             </a>
                         </div>
                         <!-- /.booking__call-center -->
-                        <button class="button booking__button">View Other Options</button>
+                        <button data-toggle="modal" class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
                     <div class="map">
@@ -413,10 +413,10 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*"/>
-                        <input type="text" class="input footer__input" placeholder="Phone Number*"/>
-                        <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+                    <form action="send.php" method="POST" class="footer__form">
+                        <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*"/>
+                        <input type="text" class="input footer__input" name="phone" placeholder="Phone Number*"/>
+                        <textarea cols="30" rows="10" class="message footer__message" placeholder="Message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>   
                     </form>
@@ -442,6 +442,28 @@
         </div>
         <!-- /.container -->
    </footer>
+   <div class="modal">
+       <div class="modal__overlay"></div>
+       <!-- /.modal__overlay -->
+       <div class="modal__dialog">
+           <a href="#" class="modal__close">
+               <img src="img/close.svg" alt="Icon: close">
+           </a>
+                <div class="modal__contact-form">
+                    <h3 class="modal__title modal__title--mb-3">Booking</h3>
+                    <form action="#" class="modal__form">
+                        <input type="text" class="input modal__input" placeholder="Your Full Name*"/>
+                        <input type="text" class="input modal__input" placeholder="Phone Number*"/>
+                        <input type="text" class="input modal__input" placeholder="Email*"/>
+                        <textarea cols="30" rows="10" class="message modal__message" placeholder="Message"></textarea>
+                        <button class="button modal__button" type="submit">Send</button>
+                        <span class="modal__info">* Required Fields</span>   
+                    </form>
+        </div>
+       <!-- /.modal__dialog -->
+   </div>
+   <!-- /.modal -->
+   <script src="js/jquery-3.5.1.min.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/main.js"></script>
 </body>
