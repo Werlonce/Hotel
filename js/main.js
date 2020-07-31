@@ -56,8 +56,8 @@ $(document).ready(function () {
         modalDialog.removeClass('modal__dialog--visible')
     }
 
-    $(document).keyup(function() { 
-        if (keyCode == 27) {}
+    $(document).keyup(function(e) { 
+        if (e.keyCode == 27) {}
         // Закрытие модального окна при нажатии ESC
         var modalOverlay = $('.modal__overlay')
         var modalDialog = $('.modal__dialog')
