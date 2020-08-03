@@ -199,7 +199,7 @@
                <span class="newsletter-title__strong">Newsletter</span>
            </h2>
            <form action="#" class="subscribe newsletter__subscribe">
-           <input type="text" class="subscribe__input" placeholder="Your email address">
+           <input type="text" class="subscribe__input" placeholder="Your email address" required>
             <button class="subscribe__button">Send</button>
         </form>
        </div>
@@ -413,10 +413,14 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*"/>
-                        <input type="text" class="input footer__input" name="phone" placeholder="Phone Number*"/>
-                        <textarea cols="30" rows="10" class="message footer__message" placeholder="Message"></textarea>
+                    <form action="send.php" method="POST" class="footer__form form">
+                        <div class="footer__input-group">
+                            <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*" required/>
+                        </div>
+                        <div class="footer__input-group">
+                            <input type="tel" class="input footer__input" name="phone" placeholder="Phone Number*" required/>
+                        </div>
+                            <textarea cols="30" rows="10" class="message footer__message" placeholder="Message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>   
                     </form>
@@ -451,10 +455,10 @@
            </a>
                 <div class="modal__contact-form">
                     <h3 class="modal__title modal__title--mb-3">Booking</h3>
-                    <form action="#" class="modal__form">
-                        <input type="text" class="input modal__input" placeholder="Your Full Name*"/>
-                        <input type="text" class="input modal__input" placeholder="Phone Number*"/>
-                        <input type="text" class="input modal__input" placeholder="Email*"/>
+                    <form action="#" class="modal__form form">
+                        <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*" required minlength="2"/>
+                        <input type="tel" class="input modal__input" name="phone" placeholder="Phone Number*" required/>
+                        <input type="email" class="input modal__input" name="email" placeholder="Email*" required/>
                         <textarea cols="30" rows="10" class="message modal__message" placeholder="Message"></textarea>
                         <button class="button modal__button" type="submit">Send</button>
                         <span class="modal__info">* Required Fields</span>   
@@ -465,6 +469,8 @@
    <!-- /.modal -->
    <script src="js/jquery-3.5.1.min.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.mask.min.js"></script>
    <script src="js/main.js"></script>
 </body>
 </html>
