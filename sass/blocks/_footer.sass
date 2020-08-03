@@ -81,10 +81,13 @@
         color: inherit
     &__input
         width: 100%
+        position: relative
+        margin-bottom: 15px
         &-group
-            margin-bottom: 15px
+            display: flex
             flex-basis: 48%
-            outline: none
+    &__input.invalid
+        margin-top: 0        
     &__message
         flex-basis: 100%
         margin-bottom: 23px

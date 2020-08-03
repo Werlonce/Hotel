@@ -198,8 +198,10 @@
            <h2 class="newsletter-title newsletter-title">subscribe to our
                <span class="newsletter-title__strong">Newsletter</span>
            </h2>
-           <form action="#" class="subscribe newsletter__subscribe">
-           <input type="text" class="subscribe__input" placeholder="Your email address" required>
+           <form action="#" class="subscribe newsletter__subscribe form">
+               <div class="subscribe__input-group">
+                    <input type="email" class="subscribe__input" name="email" placeholder="Your email address" required>
+               </div>
             <button class="subscribe__button">Send</button>
         </form>
        </div>
@@ -386,21 +388,21 @@
                 <!-- /.footer__list -->
                 <div class="footer__contact-details">
                     <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
-                    <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
+                    <p class="footer__text">Feel free to contact us by phone, email or by our contact&nbsp;form</p>
                     <ul class="footer__ul">
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/map-marker.svg" alt="Icon: Map">
                             </div>
-                            9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                            9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United&nbsp;States
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: Phone">
                             </div>
                             Tel (business hours) : 269 1500 <br>
-                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00&nbsp;am – 20:00&nbsp;pm) <br>
+                            Tel (hotline) Sunday: 52-56-61-38 (08:00&nbsp;am – 14:00&nbsp;pm)
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
@@ -456,9 +458,15 @@
                 <div class="modal__contact-form">
                     <h3 class="modal__title modal__title--mb-3">Booking</h3>
                     <form action="#" class="modal__form form">
-                        <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*" required minlength="2"/>
-                        <input type="tel" class="input modal__input" name="phone" placeholder="Phone Number*" required/>
-                        <input type="email" class="input modal__input" name="email" placeholder="Email*" required/>
+                        <div class="modal__input-group">
+                            <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*" required minlength="2"/>
+                        </div>
+                        <div class="modal__input-group">
+                            <input type="tel" class="input modal__input" name="phone" placeholder="Phone Number*" required/>
+                        </div>
+                        <div class="modal__input-group">
+                            <input type="email" class="input modal__input" name="email" placeholder="Email*" required/>
+                        </div>
                         <textarea cols="30" rows="10" class="message modal__message" placeholder="Message"></textarea>
                         <button class="button modal__button" type="submit">Send</button>
                         <span class="modal__info">* Required Fields</span>   
