@@ -8,15 +8,40 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$emailNews = $_POST['email-news'];
+$modalName = $_POST['modal-name'];
+$modalPhone = $_POST['modal-phone'];
+$modalEmail = $_POST['modal-email'];
+$modalMessage = $_POST['modal-message'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+if ($name) {
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+    <br>
+    ";
+} elseif ($emailNews) {
+    $title = "Новая подписка Best Tour Plan";
+    $body = "
+    <h2>Новая подписка</h2>
+    <b>Почта:</b><br>$emailNews
+    <br>
+    "; 
+} else {
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b>  $modalName<br>
+    <b>Телефон:</b>  $modalPhone<br>
+    <b>Почта:</b>  $modalEmail<br><br>
+    <b>Сообщение:</b><br>$modalMessage
+    <br>
+    "; 
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -53,4 +78,12 @@ try {
     }
 
 // Отображение результата
-header('Location: thankyou.html');
+//header('Location: thankyou.html');
+if ($name) {
+    header('Location: thankyou.html'); 
+} else {
+    header('Location: subscribe.html'); 
+}
+if ($modalName) {
+	header('Location: thankyou.html');
+}
