@@ -81,6 +81,7 @@ $(document).ready(function () {
                 },
                 phone: {
                     required: "Phone is required",
+                    minlength: "Phone number must be at least 11 digits"
                 },
             },     
         })

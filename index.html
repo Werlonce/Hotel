@@ -418,10 +418,10 @@
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
                     <form action="send.php" method="POST" class="footer__form form">
                         <div class="footer__input-group">
-                            <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*" required/>
+                            <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*" required minlength="2"/>
                         </div>
                         <div class="footer__input-group">
-                            <input type="tel" class="input footer__input" name="phone" placeholder="Phone Number*" required/>
+                            <input type="tel" class="input footer__input" name="phone" placeholder="Phone Number*" required minlength="11"/>
                         </div>
                             <textarea cols="30" rows="10" class="message footer__message" name="message" placeholder="Message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
@@ -463,7 +463,7 @@
                             <input type="text" class="input modal__input" name="modal-name" placeholder="Your Full Name*" required minlength="2"/>
                         </div>
                         <div class="modal__input-group">
-                            <input type="tel" class="input modal__input" name="modal-phone" placeholder="Phone Number*" required/>
+                            <input type="tel" class="input modal__input" name="modal-phone" placeholder="Phone Number*" required minlength="11"/>
                         </div>
                         <div class="modal__input-group">
                             <input type="email" class="input modal__input" name="nodal-email" placeholder="Email*" required/>
