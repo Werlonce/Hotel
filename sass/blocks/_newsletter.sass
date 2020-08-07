@@ -23,6 +23,7 @@
         max-width: 731px
         margin: auto
     &-title
+        margin: 0
         font-style: normal
         font-weight: 300
         font-size: 24px
@@ -39,8 +40,6 @@
     position: relative
     width: 350px
     height: 55px
-    // border-radius: 4px
-    // overflow: hidden
     &__input  
         display: flex
         position: absolute
@@ -61,7 +60,8 @@
         &-group .invalid
             margin-top: 60px        
         &.invalid
-            margin-top: 0            
+            margin-top: 0
+            border: 1px solid $primary            
     &__button
         position: absolute
         min-width: 65px
@@ -75,4 +75,5 @@
         font-weight: bold
         font-size: 12px
         line-height: 15px
-        border-radius: 0 4px 4px 0   
+        border-radius: 0 4px 4px 0 
+        cursor: pointer  

@@ -91,5 +91,11 @@ $(document).ready(function () {
         maskedInput.each(function(){
         $(this).mask("+7 (999) 999-99-99");
     });
+    // Библиотека анимации
     AOS.init();
+
+    // Подгрузка карты
+    $(".map").mousemove(function (event) {
+        $(".google-maps").append('<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0413263625383!2d98.29254741535308!3d7.890745494315381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1595320439950!5m2!1sru!2sru" height="213" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
+    });
 });
