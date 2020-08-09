@@ -91,6 +91,32 @@ $(document).ready(function () {
         maskedInput.each(function(){
         $(this).mask("+7 (999) 999-99-99");
     });
+
+    // Маска для инпута name
+    $("#name").mask("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"), {
+        watchDataMask: true,
+        watchInterval: 100,
+        translation: {
+            $: {
+                pattern: /[A-Za-z]/,
+                optional: true,
+            }
+        }
+
+    }
+
+    $("#modal-name").mask("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"), {
+        watchDataMask: true,
+        watchInterval: 100,
+        translation: {
+            $: {
+                pattern: /[A-Za-z]/,
+                optional: true,
+            }
+        }
+
+    }
+
     // Библиотека анимации
     AOS.init();
 
