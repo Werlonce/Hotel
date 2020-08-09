@@ -280,7 +280,7 @@
                    <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
                    <h3 class="card__title">The curious corner of chamarel</h3>
                    <!-- /.card__title -->
-                   <button class="card__button">Book Now</button>
+                   <button data-toggle="modal" class="card__button">Book Now</button>
                    <!-- /.card__button -->
                </div>
                <!-- /.card -->
@@ -288,7 +288,7 @@
                 <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
                 <h3 class="card__title">Gymkhana club golf course</h3>
                 <!-- /.card__title -->
-                <button class="card__button">Book Now</button>
+                <button data-toggle="modal" class="card__button">Book Now</button>
                 <!-- /.card__button -->
             </div>
             <!-- /.card -->
@@ -296,7 +296,7 @@
                 <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                 <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                 <!-- /.card__title -->
-                <button class="card__button">Book Now</button>
+                <button data-toggle="modal" class="card__button">Book Now</button>
                 <!-- /.card__button -->
             </div>
             <!-- /.card -->
@@ -304,7 +304,7 @@
                 <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
                 <h3 class="card__title">The blue marine discovery quest</h3>
                 <!-- /.card__title -->
-                <button class="card__button">Book Now</button>
+                <button data-toggle="modal" class="card__button">Book Now</button>
                 <!-- /.card__button -->
             </div>
             <!-- /.card -->
@@ -316,7 +316,7 @@
    <footer class="footer">
       <div class="container">
           <div class="footer-wrapper">
-              <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+            <a href="#" class="logo footer__logo"><img href="index.html" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo"></a>
               <div class="footer__list footer__categories">
                   <h3 class="footer__title">ALL CATEGORIES</h3>
                   <ul class="footer__ul">
@@ -423,7 +423,7 @@
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
                     <form action="send.php" method="POST" class="footer__form form">
                         <div class="footer__input-group">
-                            <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*" required minlength="2"/>
+                            <input type="text" id="name" class="input footer__input" name="name" placeholder="Your Full Name*" required minlength="2"/>
                         </div>
                         <div class="footer__input-group">
                             <input type="tel" class="input footer__input" name="phone" placeholder="Phone Number*" required minlength="18"/>
@@ -465,7 +465,7 @@
                     <h3 class="modal__title modal__title--mb-3">Booking</h3>
                     <form action="send.php" method="POST" class="modal__form form">
                         <div class="modal__input-group">
-                            <input type="text" class="input modal__input" name="modal-name" placeholder="Your Full Name*" required minlength="2"/>
+                            <input type="text" id="modal-name" class="input modal__input" name="modal-name" placeholder="Your Full Name*" required minlength="2"/>
                         </div>
                         <div class="modal__input-group">
                             <input type="tel" class="input modal__input" name="modal-phone" placeholder="Phone Number*" required minlength="18"/>
